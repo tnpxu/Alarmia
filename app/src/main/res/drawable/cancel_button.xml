@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true"><!-- pressed -->
+        <shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+            <corners android:radius="60dp" />
+            <size android:height="40dp" android:width="100dp"/>
+            <gradient android:centerColor="@color/cancelbuttonpressed"
+                android:endColor="@color/cancelbuttonpressed"
+                android:startColor="@color/cancelbuttonpressed"/>
+        </shape>
+    </item>
+    <item> <!-- default -->
+        <shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+            <corners android:radius="60dp" />
+            <size android:height="40dp" android:width="100dp"/>
+            <gradient android:centerColor="@color/cancelbutton"
+                android:endColor="@color/cancelbutton"
+                android:startColor="@color/cancelbutton"/>
+        </shape>
+    </item>
+</selector>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true"><!-- pressed -->
+        <shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+            <stroke android:width="1dp" android:color="@color/untilokcolorpressed"/>
+            <corners android:bottomLeftRadius="60dp"
+                android:topLeftRadius="60dp" />
+            <size android:height="40dp" android:width="100dp"/>
+            <gradient android:centerColor="@color/untilokcolorpressed"
+                android:endColor="@color/untilokcolorpressed"
+                android:startColor="@color/untilokcolorpressed"/>
+        </shape>
+    </item>
+    <item> <!-- default -->
+        <shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+            <stroke android:width="1dp" android:color="@color/untilokcolor"/>
+            <corners android:bottomLeftRadius="60dp"
+                android:topLeftRadius="60dp"/>
+            <size android:height="40dp" android:width="100dp"/>
+            <gradient android:centerColor="@color/untilokcolor"
+                android:endColor="@color/untilokcolor"
+                android:startColor="@color/untilokcolor"/>
+        </shape>
+    </item>
+</selector>

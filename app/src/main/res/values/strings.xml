@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Alarmia</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="settimerclock">12:00 </string>
+    <string name="settimerpmam">12:00 </string>
+    <string name="settimerpm">PM</string>
+
+    <!-- string for sleepfor -->
+    <string name="sleepfor_hr">HR</string>
+    <string name="sleepfor_mn">MN</string>
+    <string name="sleepfor_set_hr">10</string>
+    <string name="sleepfor_set_mn">47</string>
+    <string name="drawer_open">Open Navigation drawer</string>
+    <string name="drawer_close">Close Navigation drawer</string>
+    <string name="title_activity_start_running">StartRunningActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+</resources>

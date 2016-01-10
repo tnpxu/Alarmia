@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:background="@drawable/list_back_side_bg"
+        android:gravity="center"
+        android:id="@+id/back"
+        android:tag="back" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <Button
+                android:layout_width="75dp"
+                android:layout_height="match_parent"
+                android:id="@+id/button_home_del"
+                android:text="DELETE"
+                android:textSize="10dp"
+                android:textColor="@color/white"
+                android:background="@null"
+                android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="#ff31415a"
+        android:id="@+id/front"
+        android:tag="front">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textColor="#ffffff"
+            android:paddingLeft="20dp"
+            android:id="@+id/text_home_clock"/>
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:id="@+id/button_tran"
+            android:src="@drawable/home_tran_for_arrow"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:background="@drawable/start_clock_button"
+            android:id="@+id/button_clock_start"
+            android:text="START"
+            android:textSize="6.5dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="5dp"
+            />
+
+
+    </RelativeLayout>
+
+</FrameLayout>

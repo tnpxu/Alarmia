@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/settimer_bg">
+
+    <!--Mode button-->
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="-70dp"
+        android:layout_height="60dp">
+        <!-- Content -->
+        <FrameLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <!--mode label-->
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/panel_button_mode_close">
+            <Button
+                android:layout_height="60dp"
+                android:layout_width="10dp"
+                android:background="#ffab16"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+
+        <!-- Navigation drawer -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:gravity="center"
+            android:weightSum="1.0">
+            <Button
+                android:id="@+id/button_sleepfor"
+                android:layout_height="60dp"
+                android:layout_weight=".5"
+                android:layout_width="0dip"
+                android:text="SleepFor"
+                android:background="@drawable/sleepforcolor"
+                android:scaleType="fitXY"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/button_sleepuntil"
+                android:layout_height="60dp"
+                android:layout_weight=".5"
+                android:layout_width="0dip"
+                android:text="SleepUntil"
+                android:background="@drawable/sleepuntilcolor"
+                android:scaleType="fitXY"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+    </android.support.v4.widget.DrawerLayout>
+
+
+
+
+    <!--Menu panel-->
+   <RelativeLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:id="@+id/bottom_panel"
+       android:layout_alignParentBottom="true">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:weightSum="1.0">
+           <ImageButton
+               android:id="@+id/button_calendar"
+               android:layout_width="0dp"
+               android:layout_height="60dp"
+               android:layout_weight="0.5"
+               android:text="CALENDAR"
+               android:scaleType="fitXY"
+               android:background="@drawable/calendarcolor"
+               android:src="@drawable/info64"
+               android:cropToPadding="false"
+               android:paddingTop="8dp"
+               android:paddingBottom="8dp"
+               android:paddingLeft="70dp"
+               android:paddingRight="70dp"/>
+           <ImageButton
+               android:id="@+id/button_setting"
+               android:layout_width="0dp"
+               android:layout_height="60dp"
+               android:layout_weight="0.5"
+               android:text="SETTING"
+               android:scaleType="fitXY"
+               android:background="@drawable/settingcolor"
+               android:src="@drawable/setting_icon"
+               android:cropToPadding="false"
+               android:paddingTop="7dp"
+               android:paddingBottom="7dp"
+               android:paddingLeft="72dp"
+               android:paddingRight="72dp"/>
+       </LinearLayout>
+   </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/panel_above"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/bottom_panel">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1.0">
+            <ImageButton
+                android:id="@+id/button_game"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="0.5"
+                android:text="GAME"
+                android:scaleType="fitXY"
+                android:background="@drawable/gamecolor"
+                android:src="@drawable/game_icon"
+                android:cropToPadding="false"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="70dp"
+                android:paddingRight="70dp"/>
+            <ImageButton
+                android:id="@+id/button_music"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="0.5"
+                android:scaleType="fitXY"
+                android:text="MUSIC"
+                android:background="@drawable/musiccolor"
+                android:src="@drawable/music_icon"
+                android:cropToPadding="false"
+                android:paddingTop="9dp"
+                android:paddingBottom="9dp"
+                android:paddingLeft="75dp"
+                android:paddingRight="75dp"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <!--Clock panel-->
+
+    <RelativeLayout
+        android:id="@+id/a1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/panel_above"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="60dp">
+        <ImageButton
+            android:id="@+id/button_donetohome"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:height="100dp"
+            android:width="100dp"
+            android:background="@drawable/save_button_bg"
+            android:src="@drawable/savebuttonicon"
+
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/settimerclock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/a1">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="none-setting"
+            android:id="@+id/text_clock"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:textSize="50sp"
+            android:layout_marginBottom="50dp"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/settimerclock"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="23dp"
+        >
+        <TextView
+            android:id="@+id/text_pmam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:layout_marginBottom="100dp"
+            />
+    </RelativeLayout>
+
+
+
+
+    <!--Save button-->
+
+
+
+</RelativeLayout>
+

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:swipe="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1.0">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:layout_weight="0.86"
+       android:background="@drawable/welcomebg2">
+       <com.cn434.alarmia.SwipeListView
+           android:id="@+id/list_view"
+           android:listSelector="#fcf52c"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           swipe:swipeFrontView="@+id/front"
+           swipe:swipeBackView="@+id/back"
+           swipe:swipeAnimationTime="0"
+           swipe:swipeOffsetLeft="305dp"
+           swipe:swipeMode="left"
+           swipe:swipeCloseAllItemsWhenMoveList="true"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.14"
+        android:layout_gravity="bottom">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#1c1b28"
+                    android:id="@+id/home_panel_add"
+                    android:layout_alignParentEnd="true" />
+
+                <Button
+                    android:id="@+id/button_add_home"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/add_button_bg"
+                    android:text="+"
+                    android:textSize="40dp"
+                    android:paddingBottom="5dp"
+                    android:textColor="@android:color/white"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true" />
+
+
+
+
+
+
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+</LinearLayout>

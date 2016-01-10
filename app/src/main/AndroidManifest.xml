@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cn434.alarmia" >
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher2"
+        android:label="Alarmia"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+        <activity
+            android:name=".HomeActivity"
+            android:label="Alarmia"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".StartActivity"
+            android:label="Alarmia"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SetTimerActivity"
+            android:label="Alarmia"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".SleepUntilActivity"
+            android:label="Alarmia"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".SleepForActivity"
+            android:label="Alarmia"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <activity
+            android:name=".MusicActivity"
+            android:label="Alarmia"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".CalendarActivity"
+            android:label="Alarmia"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".GameActivity"
+            android:label="Alarmia"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".SettingActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".CaptchaActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <activity
+            android:name=".StartRunningActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen"
+            >
+        </activity>
+        <activity
+            android:name=".ShakeActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen"
+            >
+        </activity>
+        <service android:name=".VibrateService"
+            android:exported="true">
+        </service>
+    </application>
+
+</manifest>

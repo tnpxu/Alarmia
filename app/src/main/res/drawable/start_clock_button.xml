@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true" ><!-- pressed -->
+        <shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+            <corners android:radius="60dp" />
+            <size android:height="5dp" android:width="40dp"/>
+            <gradient android:centerColor="@color/startclockcolorpressed"
+                android:endColor="@color/startclockcolorpressed"
+                android:startColor="@color/startclockcolorpressed"/>
+        </shape>
+    </item>
+    <item> <!-- default -->
+        <shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+            <corners android:radius="60dp" />
+            <size android:height="5dp" android:width="40dp"/>
+            <gradient android:centerColor="@color/startclockcolor"
+                android:endColor="@color/startclockcolor"
+                android:startColor="@color/startclockcolor"/>
+        </shape>
+    </item>
+</selector>

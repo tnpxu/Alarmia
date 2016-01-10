@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/settimer_bg">
+
+    <!--Mode button-->
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="-70dp"
+        android:layout_height="60dp">
+        <!-- Content -->
+        <FrameLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <!--mode label-->
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/panel_button_mode_close">
+            <Button
+                android:layout_height="60dp"
+                android:layout_width="10dp"
+                android:background="#ffab16"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+        <!-- Navigation drawer -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:gravity="center"
+            android:weightSum="1.0">
+            <Button
+                android:id="@+id/button_sleepfor"
+                android:layout_height="60dp"
+                android:layout_weight=".5"
+                android:layout_width="0dip"
+                android:text="SleepFor"
+                android:background="@drawable/sleepforcolor"
+                android:scaleType="fitXY"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/button_sleepuntil"
+                android:layout_height="60dp"
+                android:layout_weight=".5"
+                android:layout_width="0dip"
+                android:text="SleepUntil"
+                android:background="@drawable/sleepuntilcolor"
+                android:scaleType="fitXY"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+    </android.support.v4.widget.DrawerLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="100dp">
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:text="OK"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:background="@drawable/until_ok_button"
+            android:id="@+id/fragment_ok" />
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:text="Setting"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:background="@drawable/until_setting_button"
+            android:layout_toRightOf="@id/fragment_ok"
+            android:id="@+id/fragment_setting"/>
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/until_time"
+        android:text="55:55"
+        android:textColor="#FFFFFF"
+        android:textSize="70dp"
+        android:padding="0dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="95dp"
+        android:layout_marginLeft="95dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="3dp"
+        android:id="@+id/pm_or_am"
+        android:text="PM"
+        android:textColor="#ff747b"
+        android:textSize="20dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="300dp"
+        android:layout_centerVertical="true"
+        />
+
+
+</RelativeLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="orange">#f1592a</color>
+    <color name="white">#ffffff</color>
+    <color name="red">#FF1700</color>
+    <color name="liststartcolor">#FF1700</color>
+    <color name="listmidcolor">#820C00</color>
+    <color name="listendcolor">#240300</color>
+    <color name="untilcolor">#ff5d35</color>
+    <color name="untilcolorpressed">#952020</color>
+    <color name="forcolor">#ffab16</color>
+    <color name="forcolorpressed">#cf8b13</color>
+    <color name="gamecolor">#95076d</color>
+    <color name="gamecolorpressed">#68054c</color>
+    <color name="musiccolor">#9b0da7</color>
+    <color name="musiccolorpressed">#820c8c</color>
+    <color name="calendarcolor">#5b0da7</color>
+    <color name="calendarcolorpressed">#4a0b87</color>
+    <color name="settingcolor">#5c0e7f</color>
+    <color name="settingcolorpressed">#420a5b</color>
+    <color name="savecolor">#950606</color>
+    <color name="savecolorpressed">#750505</color>
+    <color name="saveedgecolor">#470d03</color>
+    <color name="addcolor">#02658b</color>
+    <color name="addcolorpressed">#025575</color>
+    <color name="dotcolor">#d8e4e9</color>
+    <color name="dotcolorpressed">#c4d0d5</color>
+    <color name="donecolor">#e84443</color>
+    <color name="donecolorpressed">#a83333</color>
+    <color name="untildonecolor">#ffab16</color>
+    <color name="untildonecolorpressed">#cf8b13</color>
+    <color name="untilokcolor">#e84443</color>
+    <color name="untilokcolorpressed">#a83333</color>
+    <color name="startclockcolor">#E5EAFF</color>
+    <color name="startclockcolorpressed">#676A73</color>
+    <color name="black_overlay">#66000000</color>
+
+    <color name="cancelbuttonpressed">#E07F0E07</color>
+    <color name="cancelbutton">#E0D9180C</color>
+
+</resources>
